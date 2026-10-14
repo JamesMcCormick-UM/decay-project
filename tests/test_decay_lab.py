@@ -12,7 +12,7 @@ def test_half_life_of_known_lambda():
 def test_recovers_known_lambda_from_clean_data():
     t = np.arange(0, 10, 0.5)
     counts = 1000 * np.exp(-0.35 * t)
-    assert decay_constant(t, counts) == 0.35
+    assert decay_constant(t, counts) == pytest.approx(0.35)
 
 
 # pytest.approx()
