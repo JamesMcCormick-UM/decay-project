@@ -1,0 +1,28 @@
+# COMPFOR 203 — decay project
+# Create:  mamba env create -f environment.yml
+# Update:  mamba env update -f environment.yml --prune
+# Remove:  mamba env remove -n compfor203
+
+name: compfor203
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # --- interpreter ---------------------------------------------------
+  - python=3.12
+
+  # --- scientific stack ----------------------------------------------
+  - numpy=2.1.*
+  - pandas=2.2.*
+
+  # --- testing / tooling ---------------------------------------------
+  - pytest=8.3.*
+  - pre-commit=4.0.*
+  - ruff=0.8.*
+
+  # --- pip-only packages (none yet) ------------- --------------------
+  - pip
+  - pip:
+      - --requirement requirements.txt

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+build/
+dist/
+
+# Testing / tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Outputs — keep results out of the repo
+*.log
+run.log
+outputs/
+figures/*.png
+
+# Large data: we keep decay_counts.csv (small), block the rest
+*.nc
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.parquet
+
+# Installers / archives — never commit these
+*.sh.download
+Miniforge3-*.sh
+Miniconda3-*.sh
+*.tar.gz
+*.zip
+*.dmg
